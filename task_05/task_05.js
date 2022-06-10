@@ -25,8 +25,8 @@ console.log(starTree);
 
 // example
 
-// const lines = 5;
-// let result = '';
+const lines = 5;
+let result = '';
 
 // for (let i = 0; i <= lines; i++) {
 
