@@ -5,21 +5,21 @@ function fib(num) {
         let line = '', arr = [];
         for (let i = 0; i < num; i++) {
 
-            // if (arr.length < 2) {
-            //     arr[i] = i;
-            // } else {
-            //     arr[i] = arr[i-1] + arr[i-2];
-            // }
+            // arr.length < 2 ? arr[i] = i : arr[i] = arr[i - 1] + arr[i - 2];
 
-            arr.length < 2 ? arr[i] = i : arr[i] = arr[i - 1] + arr[i - 2];
+            if (arr.length < 2) {
+                arr[i] = i;
+            } else {
+                arr[i] = arr[i-1] + arr[i-2];
+            }
 
-            // if (i == 0) {
-            //     line += `${arr[i]}`;
-            // } else {
-            //     line += ` ${arr[i]}`;
-            // }
+            // i == 0 ? line += `${arr[i]}` :  line += ` ${arr[i]}`;
 
-            i == 0 ? line += `${arr[i]}` :  line += ` ${arr[i]}`;
+            if (i == 0) {
+                line += `${arr[i]}`;
+            } else {
+                line += ` ${arr[i]}`;
+            }
         }
         return line;
     } else {
