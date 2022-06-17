@@ -18,14 +18,6 @@ const personalMoviesDB = {
         actors: {},
         genres: [],
         privat: false
-    },
-    movie1 = prompt('Один из последних просмотренных фильмов?', ''),
-    movieRating1 = +prompt('На сколько оцените его?', ''),
-    movie2 = prompt('Один из последних просмотренных фильмов?', ''),
-    movieRating2 = +prompt('На сколько оцените его', ''),
-    movies = {
-        'movie1': 'movieRating1',
-        'movie2': 'movieRating2',
     };
 
 function rememberMyFilms() {
