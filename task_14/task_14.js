@@ -14,13 +14,9 @@ function sortStudentsByGroups(arr) {
     }
 
     for (let i = 0; i < arr.length; i++) {
-        if (i + 1 >= q * 3) { q++; }
+        if (i + 1 > q * 3 && q < quantityGroups) { q++; }
 
-        if (i < q * quantityGroups) {
-            studentsGroups[q - 1].push(arr[i]);
-        } else {
-            restStudents.push(arr[i]);
-        }
+        i < q * quantityGroups ? studentsGroups[q - 1].push(arr[i]): restStudents.push(arr[i]);
     }
 
     studentsGroups.push(`Оставшиеся студенты: ${restStudents.length === 0 ? '-' : restStudents.join(', ')}`);
