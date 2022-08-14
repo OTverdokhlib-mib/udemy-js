@@ -7,7 +7,7 @@ function reverse(str) {
         return "Ошибка!";
     }
 
-    return str.split().reverse().join('');
+    return str.split('').reverse().join('');
     
     // let strReverse = '';
 
